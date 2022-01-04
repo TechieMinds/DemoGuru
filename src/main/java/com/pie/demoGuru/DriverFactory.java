@@ -14,14 +14,17 @@ private static DriverFactory driverFactory;
 	
 	//F1234
 	//F1235
-
+     
+//Use this method to instantiate chrome browser
 	public WebDriver createChromeDriver() {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		return driver;
 	}
+
 	
+//Use this method to instantiate firefox browser
 	public WebDriver createFirefoxDriver() {
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
